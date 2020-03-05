@@ -1,0 +1,155 @@
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+body {
+  background-color: darkslategray;
+}
+
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    color: white;
+    /*whatever width you want*/
+  }
+
+  
+  .shake1 {
+    animation: shaker1 0.15s;
+    animation-iteration-count: infinite;
+  }
+
+  .shake2 {
+    animation: shaker2 0.15s;
+    animation-iteration-count: infinite;
+  }
+
+
+  @keyframes shaker1 {
+    50% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    100% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+  }
+
+  @keyframes shaker2 {
+    50% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+  }
+
+
+
+  @keyframes POP {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+.pop1 {
+    display:inline-block;
+    height: 50px;
+    width:50px;
+    animation-iteration-count: 1;
+    animation-delay: .1s;
+    animation: POP 2s ;
+}
+
+.pop2 {
+    display:inline-block;
+    animation-iteration-count: 1;
+    animation-delay: .2s;
+    animation: POP 2s ;
+}
+
+.pop3 {
+    display:inline-block;
+    animation-iteration-count: 1;
+    animation-delay: .3s;
+    animation: POP 2s ;
+}
+
+.pop4 {
+    display:inline-block;
+    animation-iteration-count: 1;
+    animation-delay: .4s;
+    animation: POP .9s ;
+}
+
+.pop5 {
+    display:inline-block;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation: POP .9s ;
+}
+
+.pop6 {
+    display:inline-block;
+    animation-iteration-count: 1;
+    animation-delay: .6s;
+    animation: POP .9s ;
+}
+
+.pop7 {
+    display:inline-block;
+    animation-iteration-count: 1;
+    animation-delay: .7s;
+    animation: POP .9s ;
+}
+
+.pop8 {
+    display:inline-block;
+    animation-delay: .8s;
+    animation: POP .9s ;
+}
+
+.pop9 {
+    display:inline-block;
+    animation-delay: .9s;
+    animation: POP .9s ;
+}
+
+.pop10 {
+    display:inline-block;
+    animation-delay: 1s;
+    animation: POP .9s ;
+}

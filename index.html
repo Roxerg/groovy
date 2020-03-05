@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="god fucking damnit patrick">
+    <style></style>
+    <link rel="stylesheet"  href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="outer">
+        <div class="middle">
+          <div class="inner">
+              <img src="shaka1.png" alt="fuck" class="shake1">
+              <span id="word">
+              </span>
+              <img src="shaka2.png" alt="you"  class="shake2">
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
+
+
+<script>
+  
+  var cancer = ["RADICAL", "GR00VY"];
+  var rand = cancer[Math.floor(Math.random() * cancer.length)].split('');
+  var i = 0;
+  rand = rand.map(e => {
+    i = i + 1;
+    var node = document.createElement("DIV");
+    var textnode = document.createTextNode(e);
+    node.appendChild(textnode);       
+    node.classList.add("a" + i);
+    document.getElementById("word").appendChild(node);  
+    document.getElementsByClassName("a" + i)[0].classList.add("pop" + i);
+  })
+  
+</script>
